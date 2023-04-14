@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ .container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 100vh;
+    grid-template-areas:
+    "l l l l b b";
+ }
+
+ a{
+   text-decoration: none;
+ }
+
+ header{
+    grid-area: l;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(imagens/fundo-monocromatico-branco-gradiente.avif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+ }
+
+ main{
+    grid-area: b;
+    background-color: #B0C9D0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    min-width: 500px;
+    padding: 30px;
+ }
+ 
+ main> h2{
+   font-size: 3rem;
+   font-weight: lighter;
+ }
+
+ main> p{
+   width: 80%;
+ }
+
+ .line{
+    background-color: #91A6AB;
+    width: 80%;
+    height: 3px;
+ }
+
+ .line1{
+   width: 100%;
+   height: 30px;
+   background-color: #E3BE39;
+ }
+
+ .line2{
+   width: 100%;
+   height: 3px;
+   background-color: #E49011;
+ }
+
+ .line3{
+   width: 100%;
+   height: 3px;
+   background-color: #55F5FF;
+ }
+
+.btn01{
+   background-color: #E49011;
+   font-size: 2rem;
+   text-transform: uppercase;
+   color: white;
+   padding: 20px;
+   border-radius: 10px;
+}
+
+.btn01:hover{
+   background-color: #E3BE39;
+}
+
+.btn02{
+   background-color: #57C0DD;
+   font-size: 1rem;
+   text-transform: uppercase;
+   color: rgb(0, 0, 0);
+   padding: 7px;
+   border-radius: 7px;
+}
+
+.btn02:hover{
+   background-color: #55F5FF;
+}
+
+.precisadeajuda{
+   color: #8000ff;
+}
+
+.hdireita{
+   display: flex;
+   align-items: center;
+ }
+
+ @media (max-width: 900px){
+   .container{
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: auto auto;
+      grid-template-areas:
+      "l l l l l l"
+      "b b b b b b";
+   }
+
+   main{
+      height: 700px;
+   }
+ }

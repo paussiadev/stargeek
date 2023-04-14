@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 500px 100px;
+    grid-template-areas: 
+    "h h"
+    "m f"
+    "r r";
+}
+
+a {
+    text-decoration: none;
+}
+
+header{
+    grid-area: h;
+    background-color: rgb(219, 7, 152);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+header > img {
+    height: 80px;
+}
+
+header > a{
+    background-color: aqua;
+    font-size: 2rem;
+    border-radius: 50px;
+    padding: 10px 30px;
+}
+main {
+    grid-area: m;
+    background-color: aqua;
+}
+
+main > img {
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    grid-area: f;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form > label{
+    margin: 10px 0;
+}
+
+form > input  {
+    font-size: 2rem;
+    background-color: aqua;
+    color: brown;
+}
+
+form > input:focus{
+    background-color: blue;
+}
+
+form > label{
+    font-size: 2rem;
+}
+input[type="submit"]{
+    margin-top: 20px;
+    background-color: aquamarine;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+input[type="submit"]:hover{
+    background-color: blue;
+    color: white;
+}
+
+.caixa{
+    background-color: rgba(123, 119, 119, 0.7);
+    padding: 40px;
+    border-radius: 20px;
+   
+}
+
+
+
+
+footer{
+    grid-area: r;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
