@@ -7,6 +7,7 @@
 body{
    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    background-color: black;
+
 }
 
 .container{
@@ -43,8 +44,15 @@ main{
    align-items: center;
    flex-direction: column;
    gap: 10px;
-   padding-bottom: 40px
-   ;
+   padding-bottom: 40px;
+   padding: 10px;
+}
+
+#form{
+   padding: 20px;
+   align-items: center;
+   justify-content: center;
+   row-gap: 20px;
 }
 
 .btn01{
@@ -54,7 +62,8 @@ main{
    color: white;
    padding: 20px;
    border-radius: 10px;
-   -
+   border: 0px;
+   row-gap: 10px;
 }
 
 .btn01:hover{
@@ -73,6 +82,10 @@ h2{
 
 p{
    color:#B4B4B4;
+}
+
+label{
+   padding: 20px;
 }
 
 a{
