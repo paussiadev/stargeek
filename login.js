@@ -9,6 +9,9 @@ formulario.onsubmit = (evt)=>{
     dados.forEach((elemento) => {
         if(elemento.emailcliente == email.value && elemento.senhacliente == senha.value){
             msg.innerHTML = "Aguarde redirecionando..."
+          
+            sessionStorage.setItem("email", email.value);
+
             setTimeout(()=>{
                 window.location.assign("catalogo.html");
             }, 2000);
@@ -16,10 +19,10 @@ formulario.onsubmit = (evt)=>{
             logado = "ok";
             return true;
         }
-        if (logado!="ok") {
-            msg.innerHTML = "Usuario ou senha incorretos"
-            evt.preventDefault()
-            return null;
-        }
     });
+    if (logado!="ok") {
+        msg.innerHTML = "Usuario ou senha incorretos"
+        evt.preventDefault()
+        return null;
+    }
 }
