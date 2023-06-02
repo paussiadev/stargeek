@@ -28,7 +28,7 @@ botao.onclick = (evento) => {
                         nome: nometitulo.value,
                         descricao: descricao.value,
                         foto: nomeArq,
-                        email: emaillogado
+                        email: verficaemail
                     }
                 )
                 localStorage.setItem("catalogo", JSON.stringify(dados));
